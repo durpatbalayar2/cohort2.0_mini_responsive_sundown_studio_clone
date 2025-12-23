@@ -1,0 +1,249 @@
+@font-face {
+  font-family: mediu;
+  src: url(./NeueHaasDisplay-Mediu.ttf);
+}
+
+@font-face {
+  font-family: roman;
+  src: url(./NeueHaasDisplay-Roman.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: mediu;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#page1 {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #efeae3;
+  position: relative;
+  padding: 0 2vw;
+}
+
+#page1 nav {
+  width: 100%;
+  padding: 2vw 0vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#page1 nav .nav-items {
+  display: flex;
+  gap: 2rem;
+}
+
+#page1 nav .nav-items h3 {
+  border: 1px solid rgba(22, 21, 21, 0.555);
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: 500;
+  font-size: 1.2rem;
+  transition: all ease 0.4s;
+
+  position: relative;
+  overflow: hidden;
+}
+
+#page1 nav .nav-items h3 a {
+  text-decoration: none;
+  color: rgb(53, 52, 52);
+  position: relative;
+  z-index: 9;
+}
+
+#page1 nav .nav-items h3:hover a {
+  color: #fff;
+}
+
+#page1 nav .nav-items h3::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  position: absolute;
+  left: 0;
+  bottom: -100%;
+  border-radius: 50%;
+  transition: all ease 0.4s;
+}
+
+#page1 nav .nav-items h3:hover::after {
+  bottom: 0;
+  border-radius: 0;
+}
+
+/* Hero Section */
+
+#hero {
+  height: 70vh;
+  width: 100%;
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  padding-bottom: 2vw;
+}
+
+#hero #left h3 {
+  width: 30vw;
+  font-size: 1.9rem;
+}
+
+#hero #right h1 {
+  width: 50vw;
+  font-size: 10rem;
+  text-align: right;
+  text-transform: uppercase;
+  font-family: roman;
+  letter-spacing: -2px;
+  line-height: 0.8;
+}
+
+#page1 video {
+  margin-top: 3vw;
+  width: 100%;
+  border-radius: 30px;
+  position: relative;
+  z-index: 9;
+}
+
+#page1 .box-moving {
+  position: absolute;
+  width: 46vw;
+  height: 36vw;
+  right: 0;
+  top: 78vh;
+}
+
+.box-moving #box-1 {
+  height: 100%;
+  width: 100%;
+  background-color: #fe370d;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  filter: blur(20px);
+  position: absolute;
+}
+.box-moving #box-2 {
+  height: 30vw;
+  width: 30vw;
+  background: linear-gradient(#fe370d, #f53918);
+  border-radius: 60%;
+  filter: blur(10px);
+  position: absolute;
+  animation: anime2 5s alternate infinite;
+}
+
+.box-moving #box-3 {
+  height: 30vw;
+  width: 30vw;
+  background: linear-gradient(#fe370d, #f14211);
+  border-radius: 50%;
+  filter: blur(25px);
+  position: absolute;
+
+  animation: anime1 5s alternate infinite;
+}
+
+@keyframes anime1 {
+  from {
+    transform: translate(50%, -4%);
+  }
+  to {
+    transform: translate(0%, 10%);
+  }
+}
+@keyframes anime2 {
+  from {
+    transform: translate(5%, -5%);
+  }
+  to {
+    transform: translate(-20%, 30%);
+  }
+}
+
+#page2 {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #efeae3;
+  padding: 8vw 0;
+}
+
+#page2 #moving-text {
+  white-space: nowrap;
+  overflow-x: auto;
+}
+
+/* To remove scrollbar */
+#moving-text::-webkit-scrollbar {
+  display: none;
+}
+
+#page2 #moving-text .con {
+  white-space: nowrap;
+  display: inline-block;
+
+  animation: moveText 10s linear infinite;
+}
+
+#page2 #moving-text .con h1 {
+  font-size: 9vw;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+#page2 #moving-text #circle {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: #fe370d;
+  display: inline-block;
+  margin: 1vw 2vw;
+}
+
+@keyframes moveText {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+#page2-bottom {
+  height: 60vh;
+  width: 100%;
+  padding: 4vw;
+  background-color: aliceblue;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#page2-bottom h1 {
+  font-size: 3.5vw;
+  width: 50%;
+}
+
+#page2-bottom #box {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+#page2-bottom #box img {
+  width: 100%;
+  border-radius: 15px;
+}
