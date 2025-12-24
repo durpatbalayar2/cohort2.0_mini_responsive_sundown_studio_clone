@@ -16,17 +16,17 @@
       href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="style.css" />
+    
   </head>
   <body>
-
-     <div id="loader">
-        <h1>ENVIRONMENTS</h1>
-        <h1>EXPERIENCES</h1>
-        <h1>CONTENT</h1>
+    <div id="loader">
+      <h1>ENVIRONMENTS</h1>
+      <h1>EXPERIENCES</h1>
+      <h1>CONTENT</h1>
     </div>
     <div id="fixed-img"></div>
 
-    <div id="main">
+    <div id="main" data-scroll-container>
       <div id="page1">
         <nav>
           <img
@@ -38,6 +38,12 @@
             <h3><a href="#">Work</a></h3>
             <h3><a href="#">Studio</a></h3>
             <h3><a href="#">Contact</a></h3>
+          </div>
+
+          <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
           </div>
         </nav>
 
@@ -125,7 +131,7 @@
             data-img="https://assets-global.website-files.com/64d3dd9edfb41666c35b15d4/64d3dd9edfb41666c35b169f_Copy%2520of%2520211023_NikeCHI_PlayNewKids_Beauty-03-p-1600.webp"
           >
             <div class="overlay"></div>
-
+            <img class="mobile-img" src="https://assets-global.website-files.com/64d3dd9edfb41666c35b15d4/64d3dd9edfb41666c35b169f_Copy%2520of%2520211023_NikeCHI_PlayNewKids_Beauty-03-p-1600.webp" alt="Play New Kidvision">
             <h2>Play New Kidvision</h2>
             <div class="text-box">
               <h3>NIKE</h3>
@@ -137,6 +143,7 @@
             data-img="https://assets-global.website-files.com/64d3dd9edfb41666c35b15d4/64d3dd9edfb41666c35b163b_Copy-of-IMG_1180.webp"
           >
             <div class="overlay"></div>
+            <img class="mobile-img" src="https://assets-global.website-files.com/64d3dd9edfb41666c35b15d4/64d3dd9edfb41666c35b163b_Copy-of-IMG_1180.webp" alt="SOHO NYC">
             <h2>SOHO NYC</h2>
             <div class="text-box">
               <h3>ARC'TERYX</h3>
@@ -148,6 +155,7 @@
             data-img="https://assets-global.website-files.com/64d3dd9edfb41666c35b15d4/64d3dd9edfb41666c35b1733_Nike_HOI_50th_SU22_FL1_5388.webp"
           >
             <div class="overlay"></div>
+            <img class="mobile-img" src="https://assets-global.website-files.com/64d3dd9edfb41666c35b15d4/64d3dd9edfb41666c35b1733_Nike_HOI_50th_SU22_FL1_5388.webp" alt="Makers Studio HOI">
             <h2>Makers Studio HOI</h2>
             <div class="text-box">
               <h3>NIKE</h3>
@@ -159,6 +167,7 @@
             data-img="https://assets-global.website-files.com/64d3dd9edfb41666c35b15d4/64d3dd9edfb41666c35b1643_Copy%2520of%2520DSC04080-p-1600.webp"
           >
             <div class="overlay"></div>
+            <img class="mobile-img" src="https://assets-global.website-files.com/64d3dd9edfb41666c35b15d4/64d3dd9edfb41666c35b1643_Copy%2520of%2520DSC04080-p-1600.webp" alt="SOHO 2023">
             <h2>SOHO 2023</h2>
             <div class="text-box">
               <h3>CONVERSE</h3>
@@ -170,6 +179,7 @@
             data-img="https://assets-global.website-files.com/64d3dd9edfb41666c35b15d4/64d3dd9edfb41666c35b1712_AM704009-p-1600.webp"
           >
             <div class="overlay"></div>
+            <img class="mobile-img" src="https://assets-global.website-files.com/64d3dd9edfb41666c35b15d4/64d3dd9edfb41666c35b1712_AM704009-p-1600.webp" alt="NYFW Popup">
             <h2>NYFW Popup</h2>
             <div class="text-box">
               <h3>AFTERPAY</h3>
@@ -181,6 +191,7 @@
             data-img="https://assets-global.website-files.com/64d3dd9edfb41666c35b15d4/64d3dd9edfb41666c35b16c5_Copy%20of%20Nike_Soho_AMD21_0781_LORES.webp"
           >
             <div class="overlay"></div>
+            <img class="mobile-img" src="https://assets-global.website-files.com/64d3dd9edfb41666c35b15d4/64d3dd9edfb41666c35b16c5_Copy%20of%20Nike_Soho_AMD21_0781_LORES.webp" alt="Air Force 1 2021">
             <h2>Air Force 1 2021</h2>
             <div class="text-box">
               <h3>NIKE</h3>
@@ -192,6 +203,7 @@
             data-img="https://assets-global.website-files.com/64d3dd9edfb41666c35b15d4/64d3dd9edfb41666c35b16f4_Copy%20of%20Nike_Soho_50th_SU22_FL1_6176.webp"
           >
             <div class="overlay"></div>
+            <img class="mobile-img" src="https://assets-global.website-files.com/64d3dd9edfb41666c35b15d4/64d3dd9edfb41666c35b16f4_Copy%20of%20Nike_Soho_50th_SU22_FL1_6176.webp" alt="50th Anniversary">
             <h2>50th Anniversary</h2>
             <div class="text-box">
               <h3>NIKE</h3>
@@ -225,7 +237,7 @@
       </div>
 
       <div id="page5">
-         <div id="page2-down">
+        <div id="page2-down">
           <div class="small-dot"></div>
           <h3>Featured Projects</h3>
         </div>
@@ -307,22 +319,19 @@
                 across the Country.
               </p>
             </div>
-            
           </div>
         </div>
       </div>
 
       <div id="page6"></div>
 
-        <div id="full-scr">
-            <div id="full-div1">
-                
-            </div>
-        </div>
+      <div id="full-scr">
+        <div id="full-div1"></div>
+      </div>
     </div>
 
     <div id="footer">
-      <div id="footer-div">
+      <div id="footer-div" >
         <div id="left">
           <h1>Work</h1>
           <h1>Studio</h1>
@@ -343,13 +352,17 @@
       </div>
     </div>
 
+    <!-- Sweeper js -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
     <!-- Locomotive Cdn -->
 
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
 
-    <!-- Gsap cdn -->
+   
 
-    <script
+     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
       integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
       crossorigin="anonymous"
@@ -361,11 +374,7 @@
       integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
-    ></script>
-
-    <!-- Sweeper JS -->
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    ></script> 
 
     <script src="./app.js"></script>
   </body>
