@@ -998,12 +998,16 @@ body {
 
   #page2-bottom h1 {
     
-    font-size: 2rem !important;
+    font-size: 1.5rem !important;
     line-height: 1.8rem;
     font-weight: 100 ;
     font-family: roman;
   }
 
+
+   #page2-bottom  #box p{
+    font-size: 1.5rem !important;
+   }
 
   #page2 #hidden-circle {
   height: 25vw;
@@ -1129,28 +1133,7 @@ body {
   }
 }
 
-/* Small Mobile (up to 480px) */
-@media screen and (max-width: 480px) {
-  #hero #right h1 {
-    font-size: 2.5rem;
-  }
 
-  #hero #left h3 {
-    font-size: 1rem;
-  }
-
-  #page2-bottom h1 {
-    font-size: 1.5rem;
-  }
-
-  #elem h2 {
-    font-size: 1.2rem;
-  }
-
-  #footer h1 {
-    font-size: 30vw;
-  }
-}
 
  
 
