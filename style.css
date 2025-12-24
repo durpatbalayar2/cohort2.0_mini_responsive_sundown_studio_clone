@@ -650,7 +650,7 @@ body {
 #full-scr {
     height: 100vh;
     width: 100%;
-    background-color: #00000070;
+    background-color: #efeae3;
     position: fixed;
     z-index: 99;
     top: -100%;
